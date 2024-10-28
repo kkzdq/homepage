@@ -25,13 +25,13 @@
     "link": "https://ql.970601.xyz/"
   },
   {
+    "icon": "LaptopCode",
+    "name": "站点监测",
+    "link": "https://lu.970601.xyz/"
+  },
+  {
     "icon": "Fire",
     "name": "今日热榜",
     "link": "https://hot.970601.xyz/"
-  },
-  {
-    "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.970601.xyz/"
   }
 ]
