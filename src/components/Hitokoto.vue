@@ -32,8 +32,8 @@ const openMusicShow = ref(false);
 
 // 一言数据
 const hitokotoData = reactive({
-  text: "这里应该显示一句话",
-  from: "無名",
+  text: "这个人不懒 还写了这句话",
+  from: "派大星",
 });
 
 // 获取一言数据
@@ -47,11 +47,11 @@ const getHitokotoData = async () => {
       message: "一言获取失败",
       icon: h(Error, {
         theme: "filled",
-        fill: "var(--el-message-icon-color)",
+        fill: "var(--el-message-icon-color)",  
       }),
     });
     hitokotoData.text = "这里应该显示一句话";
-    hitokotoData.from = "無名";
+    hitokotoData.from = "派大星";
     if (store.webSpeech) {
       stopSpeech();
       const voice = envConfig.VITE_TTS_Voice;
