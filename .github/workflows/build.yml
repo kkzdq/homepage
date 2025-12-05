@@ -11,6 +11,10 @@ jobs:
     name: Build Website
     runs-on: windows-latest
     steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Checkout repository
         uses: actions/checkout@v5
       - name: Setup Node.js
@@ -19,10 +23,6 @@ jobs:
           node-version: "24.x"
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
       - name: Configure environment
         run: |
           if (-not (Test-Path .env)) {
