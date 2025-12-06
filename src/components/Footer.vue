@@ -20,19 +20,19 @@
           </a>
         </span> -->
         <span class="o-hidden">
-          &amp;&nbsp;Update&nbsp;by
+          &amp;&nbsp;Fork&nbsp;by
           <a :href="config.efug" target="_blank">
             {{ config.efua }}
           </a>
         </span>
-        <!-- 站点备案 -->
+        <!-- 站点备案
         <span>
           <span v-if="siteIcp">
             &amp;&nbsp;
             <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
               {{ siteIcp }}
             </a>
-          </span>
+          </span> -->
           <!-- 这备那备的真的很扫（bushi） -->
           <span v-if="siteMps">
             &amp;&nbsp;
