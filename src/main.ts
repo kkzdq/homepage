@@ -106,7 +106,7 @@ if (!import.meta.env.VITE_CONFIG_TURN || import.meta.env.VITE_CONFIG_TURN != "tr
       })
     });
 } else {
-  if (config.author != 'imsyy' || config.efua != 'NanoRocky') {
+  if (config.author != 'kkzdq' || config.efua != 'kkzdq') {
     console.error(`Warning: Somethings error ... , please delete and re-download the project package.`);
   } else {
     mountApp();
