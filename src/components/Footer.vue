@@ -12,13 +12,13 @@
           {{ fullYear }}
           <a :href="siteUrl">{{ siteAuthor }}</a>
         </span>
-        <!-- 以下信息请不要修改哦 
+        <!-- 以下信息请不要修改哦 -->
         <span class="o-hidden">
           &amp;&nbsp;Made&nbsp;by
           <a :href="config.github" target="_blank">
             {{ config.author }}
           </a>
-        </span> -->
+        </span>
         <span class="o-hidden">
           &amp;&nbsp;Fork&nbsp;by
           <a :href="config.efug" target="_blank">
