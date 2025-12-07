@@ -202,7 +202,8 @@ export const getIPV4AddrLocation = async (ipv4) => {
  * Github 测试
  */
 export const testGitHubConnectivity = async (): Promise<number> => {
-  const testUrl = 'https://raw.githubusercontent.com/NanoRocky/home/blob/EFU/public/images/icon/github.png';
+  const testUrl = 'https://raw.githubusercontent.com/NanoRocky/home/EFU/public/images/icon/github.png';
+  //const testUrl = 'https://api.github.com/zen';
   const timeout = 3000;
   try {
     const controller = new AbortController();
