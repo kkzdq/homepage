@@ -1,7 +1,7 @@
 <template>
   <APlayer v-if="playList[0]" ref="player" :audio="playList" :autoplay="store.playerAutoplay" :theme="theme"
     :autoSwitch="false" :loop="store.playerLoop" :order="store.playerOrder" :volume="volume" :showLrc="true"
-    :listFolded="listFolded" :listMaxHeight="listMaxHeight" :noticeSwitch="false" @play="onPlay" @pause="onPause"
+    :listFolded="listFolded" :listMaxHeight="listMaxHeight" :noticeSwitch="false" preload="none" @play="onPlay" @pause="onPause"
     @Loadstart="onLoadStart" @timeupdate="onTimeUp" @error="loadMusicError" @canplay="onCanplay" @waiting="onWaiting" />
 </template>
 
