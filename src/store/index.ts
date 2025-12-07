@@ -6,7 +6,7 @@ export const storeState: MainState = {
   // 这些变量，非有能力的开发者请只操作【开关】项来实现个性化的默认设置，其余变量勿动！
   imgLoadStatus: false, // 【状态】壁纸加载状态
   innerWidth: null as number | null, // 【状态】当前窗口宽度
-  coverType: 0 as number, // 【开关】壁纸种类
+  coverType: 1 as number, // 【开关】壁纸种类
   sBGCount: null as string | null, // 【状态】使用内置壁纸时用于临时指定壁纸的接口
   seasonalEffects: true, // 【开关】季节特效
   msgNameShow: false, // 【开关】信息区域显示自定义名而非原本的 URL
@@ -55,7 +55,7 @@ export const storeState: MainState = {
   showLantern: false, // 【状态】灯笼特效
   showProgressIcon: false, // 【状态】进度条图标显示状态
   showProgressIconState: 0, // 【状态】进度条图标持续显示状态，0: 未悬停不显示，1: 已悬停显示，2: 始终显示
-  theme: "system", // 【开关】主题，"system"/"time"/"bg"/"light"/"dark"。
+  theme: "dark", // 【开关】主题，"system"/"time"/"bg"/"light"/"dark"。
 };
 
 export const mainStore = defineStore("main", {
