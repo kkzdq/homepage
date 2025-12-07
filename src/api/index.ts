@@ -31,11 +31,9 @@ const loadJSONP = (url, callbackName) => {
 // 获取音乐播放列表
 export const getPlayerList = async (server, type, id, serverse, idse, playerTrLrc) => {
   console.log("👉 调试主ID:", id);
-  console.log("👉 调试副ID (idse):", idse, typeof idse);
-  console.log("👉 调试副服务器 (serverse):", serverse);
   let dataf: any[] = [], data3: any[] = [], data1: any[] = [], data2: any[] = [];
-  //if (serverse != null && idse != null) { 原代码
-  if (serverse && idse) {
+  if (serverse != null && idse != null) {
+  //if (serverse && idse) {
     try {
       const res1 = await fetch(
         `${envConfig.VITE_SONG_API}?server=${server}&type=${type}&id=${id}`,
