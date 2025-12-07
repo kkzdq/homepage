@@ -31,6 +31,7 @@ const loadJSONP = (url, callbackName) => {
 // 获取音乐播放列表
 export const getPlayerList = async (server, type, id, serverse, idse, playerTrLrc) => {
   console.log("👉 调试主ID:", id);
+  console.log("👉 调试副ID (idse):", idse, typeof idse);
   let dataf: any[] = [], data3: any[] = [], data1: any[] = [], data2: any[] = [];
   if (serverse != null && idse != null) {
   //if (serverse && idse) {
