@@ -8,7 +8,7 @@
   >
     <div class="btns">
       <span @click="store.musicBoxOpenState = true">音乐列表</span>
-      <span @click="store.musicOpenState = false">回到一言</span>
+      <span @click="store.musicOpenState = false">返回</span>
     </div>
     <div class="control">
       <go-start theme="filled" size="30" fill="var(--player-control-color)" @click="changeMusicIndex(0)" />
